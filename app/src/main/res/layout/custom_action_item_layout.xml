@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:focusable="true"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        style="?attr/actionButtonStyle"
+        >
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_water_glass"
+            android:background="@drawable/bg_circular_ring"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:contentDescription="@string/todo" />
+
+        <TextView
+            android:id="@+id/item_badge_text"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_badge"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:padding="1dp"
+            android:textColor="@android:color/white"
+            android:textSize="11sp"
+            app:layout_constraintTop_toTopOf="@+id/item_image"
+            app:layout_constraintEnd_toEndOf="@+id/item_image"
+            app:layout_constraintStart_toEndOf="@+id/item_image"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>
